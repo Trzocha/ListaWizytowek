@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #808080;
+}
+#list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:20%;
+    font-size: 2rem;
+    width: 40rem;
+    height: 6rem;
+    background: linear-gradient(to bottom, rgba(0,34,72,1) 0%, rgba(10,76,126,1) 29%, rgba(24,111,183,1) 50%, rgba(24,111,183,1) 
+        51%, rgba(10,76,126,1) 73%, rgba(0,34,72,1) 100%);
+    border-radius: 0.5rem;
+}
+#list, #card{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#list span{
+    padding: 1rem 2rem 1rem 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: linear-gradient(to bottom, rgba(0,34,72,1) 0%, rgba(10,76,126,1) 29%, rgba(24,111,183,1) 50%, rgba(24,111,183,1) 
+        51%, rgba(10,76,126,1) 73%, rgba(0,34,72,1) 100%);
+    border-radius: 25%;
+    color: #fff;
+}
+#list span:hover{
+     background: #002144;
+     cursor: pointer;
+}
+#card{
+    top:50%;
+    width: 45rem;
+    height: 25rem;
+    background-color: #24303c;
+    border-radius: 2rem;
+}
+.upCard{
+    position: absolute;
+    width: 45rem;
+    height: 10rem;
+    border-bottom: .7rem solid transparent;
+    border-image:  linear-gradient(to right, rgba(78,83,77,1) 0%, rgba(176,195,210,1) 50%, rgba(78,83,77,1) 100%);
+    border-image-slice: 1;
+    border-radius: 2rem;
+    background: linear-gradient(to right, rgba(0,34,72,1) 0%, rgba(10,76,126,1) 29%, rgba(24,111,183,1) 50%, rgba(24,111,183,1) 
+        51%, rgba(10,76,126,1) 73%, rgba(0,34,72,1) 100%);
+}
+.name{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+}
+.downCard ul{
+    list-style: none;
+}
+.phone{
+    right: 5%;
+    font-size: 2.5rem;
+    color:#fff;   
+}
+.phone,.age{
+    position: absolute;
+    top:50%;
+}
+.fa.fa-phone{
+   position: absolute;
+   top:-20%;
+   left: -30%;
+}
+.age{
+    left:30%;
+    transform: translate(-80%,-10%);
+    border: .3rem solid #b1c4d3;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    background-color: #013660;
+}
+.age span{
+   border-radius: 50%;
+}
+.age div{
+   font-size: 5rem;
+   z-index: 1;
+   color:#fff;
+}
+.age div,.age span{
+   position: absolute;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+}
+#no1 .downCard span{
+    border: 1.8rem solid #2882c8;
+}
+#no2 .downCard span{
+    border: 2.5rem solid #2882c8;
+}
+#no3 .downCard span{
+    border: 3.8rem solid #2882c8;
+}
+#no2, #no3 {
+    opacity:0;
+}
+#arrow{
+    position: absolute;
+    top:50%;
+    transform: translate(0%,-35%);
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    color:#fff;
+}
+#arrowLeft, #arrowRight{
+    position: inherit; 
+    opacity: 0.5;
+}
+#arrowLeft{
+    left:2rem;
+}
+#arrowRight{
+    right:2rem;     
+}
+
